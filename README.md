@@ -1,8 +1,8 @@
 # quartzHelloWorld
-HelloWorldJob.java //Job接口类
-HelloScheduler.java //任务调度类
-SimpleTriggerDemo.java //SimpleTrigger类
-CronTriggerDemo.java //CronTriggerDemo类
+HelloWorldJob.java //Job接口类<br/>
+HelloScheduler.java //任务调度类<br/>
+SimpleTriggerDemo.java //SimpleTrigger类<br/>
+CronTriggerDemo.java //CronTriggerDemo类<br/>
 
 
 
