@@ -19,7 +19,7 @@ public class HelloWorldJob implements Job{
 		//HellWorld 执行
 		Date date = new Date();
 		SimpleDateFormat sf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-		System.out.println(sf.format(date)+"----hello Test---");
+		System.out.println(sf.format(date)+"Start----hello Test---Start");
 		
 		//withIdentity获取方式
 		JobKey key = context.getJobDetail().getKey();
@@ -45,6 +45,9 @@ public class HelloWorldJob implements Job{
         //设置开始结束时间打印
 //        System.out.println("开始时间："+context.getTrigger().getStartTime() +
 //        		"结束时间：" +context.getTrigger().getEndTime());
+        
+		System.out.println("END----hello Test---END");
+
 	}
 	public void setMsg(String msg) {
 		this.msg = msg;

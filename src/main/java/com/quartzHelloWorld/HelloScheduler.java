@@ -29,7 +29,7 @@ public class HelloScheduler {
 		Trigger trigger = TriggerBuilder.newTrigger().withIdentity("myTrigger", "group1")
 				.usingJobData("msg", "trigger")
 				.usingJobData("num", 3.15D)
-				.startNow().withSchedule(SimpleScheduleBuilder.simpleSchedule().withIntervalInMilliseconds(1000).
+				.startNow().withSchedule(SimpleScheduleBuilder.simpleSchedule().withIntervalInMilliseconds(2000).
 						repeatForever()).build();
 		//设置开始结束时间
 //		Trigger trigger1 = TriggerBuilder.newTrigger().withIdentity("myTrigger", "group1")
@@ -38,6 +38,7 @@ public class HelloScheduler {
 //				.usingJobData("num", 3.15D)
 //				.withSchedule(SimpleScheduleBuilder.simpleSchedule().withIntervalInMilliseconds(1000).
 //						repeatForever()).build();
+		
 		//创建Schedule实例
 		SchedulerFactory sfact = new StdSchedulerFactory();
 		Scheduler scheduler = sfact.getScheduler();
